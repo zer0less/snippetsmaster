@@ -2,12 +2,12 @@
     "name": "snippet-master",
     "displayName": "Snippets Master",
     "description": "Snippets for multiple languages",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Slash",
     "publisher": "SlashDEV",
     "license": "MIT",
     "repository": "https://github.com/isplashy/snippetsmaster",
-    "icon": "https://github.com/isplashy/snippetsmaster/blob/master/images/sm.png",
+    "icon": "images/sm.png",
     "engines": {
         "vscode": "^1.56.0"
     },
