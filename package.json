@@ -1,0 +1,28 @@
+{
+    "name": "snippet-master",
+    "displayName": "Snippets Master",
+    "description": "Snippets for multiple languages",
+    "version": "0.0.1",
+    "author": "Slash",
+    "publisher": "SlashDEV",
+    "license": "MIT",
+    "repository": "",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/js.code-snippets"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/py.code-snippets"
+            }
+        ]
+    }
+}
