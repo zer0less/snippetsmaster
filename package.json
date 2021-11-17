@@ -7,6 +7,7 @@
     "publisher": "SlashDEV",
     "license": "MIT",
     "repository": "https://github.com/isplashy/snippetsmaster",
+    "icon": "https://github.com/isplashy/snippetsmaster/blob/master/images/sm.png",
     "engines": {
         "vscode": "^1.56.0"
     },
