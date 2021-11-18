@@ -3,7 +3,7 @@
 Get snippets for languages to make your coding experience faster! 
 Snippets are shortcuts for languages.
 
-## Avaible Languages
+## Available Languages
 - JavaScript
 - Python
 
