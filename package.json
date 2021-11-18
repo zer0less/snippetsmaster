@@ -23,6 +23,10 @@
             {
                 "language": "python",
                 "path": "./snippets/py.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/ht.code-snippets"
             }
         ]
     }

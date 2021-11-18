@@ -40,7 +40,13 @@
         "scope": "javascript,typescript",
         "prefix": "jstreeif",
         "body": ["if (${1:expression}) {", "\t$2", "} else {", "\t$0", "}"],
-        "description": "An else condition"
+        "description": "An if/else condition"
+    },
+    "JS TreeElif": {
+        "scope": "javascript,typescript",
+        "prefix": "jstreeelif",
+        "body": ["if (${1:expression}) {", "\t$3", "} else if (${2:expression2}) {", "\t$4", "} else {", "\t$0", "}"],
+        "description": "An if/elif/else condition"
     },
 
     "JS For Of": {
@@ -95,14 +101,20 @@
     "JS Method": {
         "scope": "javascript,typescript",
         "prefix": "jsmethod",
-        "body": ["${1:name}(${2:parameters} {", "\t$0", "}"],
+        "body": ["${1:name}(${2:parameters}) {", "\t$0", "}"],
         "description": "A class method"
     },
     "JS Static Method": {
         "scope": "javascript,typescript",
         "prefix": "jsstatic",
-        "body": ["static ${1:name}(${2:parameters} {", "\t$0", "}"],
+        "body": ["static ${1:name}(${2:parameters}) {", "\t$0", "}"],
         "description": "A class method"
+    },
+    "JS Class Call": {
+        "scope": "javascript,typescript",
+        "prefix": "jscall",
+        "body": ["const ${1:name} = new ${2:class}(${3})"],
+        "description": "A Class Call statement"
     },
 
     "JS Try": {
@@ -116,13 +128,44 @@
     "Log": {
         "scope": "javascript,typescript",
         "prefix": "log",
-        "body": ["console.log($1)"],
+        "body": ["console.log(\"$1\")"],
         "description": "Console log"
     },
     "Error": {
         "scope": "javascript,typescript",
         "prefix": "error",
-        "body": ["console.error($1)"],
+        "body": ["console.error(\"$1\")"],
         "description": "Console error"
+    },
+
+    "JS ElementByID": {
+        "scope": "javascript,typescript",
+        "prefix": "jsbyid",
+        "body": ["const ${1:name} = document.getElementById('${2:element}');"],
+        "description": "A getElementById statement"
+    },
+    "JS ElementsByClass": {
+        "scope": "javascript,typescript",
+        "prefix": "jsbyclass",
+        "body": ["const ${1:name} = document.getElementsByClass('${2:element}');"],
+        "description": "A getElementsById statement"
+    },
+    "JS QuerySelector": {
+        "scope": "javascript,typescript",
+        "prefix": "jsselector",
+        "body": ["const ${1:name} = document.querySelector('${2:element}')"],
+        "description": "A querySelector statement"
+    },
+    "JS CreateElement": {
+        "scope": "javascript,typescript",
+        "prefix": "jsnewelement",
+        "body": ["const ${1:name} = document.createElement('${2:tag}');"],
+        "description": "A createElement statement"
+    },
+    "JS EventListener": {
+        "scope": "javascript,typescript",
+        "prefix": "jslistener",
+        "body": ["document.addEventListener('${2:type}', function() {", "\t$0", "})"],
+        "description": "A addEventListener statement"
     }
 }
