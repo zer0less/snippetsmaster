@@ -1,9 +1,21 @@
 # Change Log
 
-All notable changes to the "js-snippets" extension will be documented in this file.
+## 0.0.3
+- Changelog
+- New Snippets:
+    - 
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 0.0.2
+- Icon for Snippets Master
+- New Snippets:
+    - jsstatic, jsvar, jslet, jsconst, log, error
 
-## [Unreleased]
+## 0.0.1
+- Start of Snippets Master
+- JavaScript Snippets
+- Python Snippets
 
-- Initial release
+## Releases
+- Unreleased
+- 0.0.1
+- 0.0.2 < lastest
