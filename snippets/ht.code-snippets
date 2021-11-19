@@ -2,7 +2,7 @@
     "HTML Comment": {
         "scope": "html",
         "prefix": "htcomment",
-        "body": ["<1--$1-->"],
+        "body": ["<!--$1-->"],
         "description": "HTML Comment"
     },
     "HTML Stylesheet": {
@@ -21,20 +21,32 @@
     "HTML ul": {
         "scope": "html",
         "prefix": "htul",
-        "body": ["<ul>", "\t<li>", "\t${1}\t", "\t</li>", "</ul>"],
+        "body": ["<ul>", "\t<li>$0</li>", "</ul>"],
         "description": "A ul/li tag tree"
     },
     "HTML ol": {
         "scope": "html",
         "prefix": "htol",
-        "body": ["<ol>", "\t<li>", "\t$0\t", "\t</li>", "</ol>"],
+        "body": ["<ol>", "\t<li>$0</li>", "</ol>"],
         "description": "A ol/li tag tree"
     },
     "HTML div": {
         "scope": "html",
         "prefix": "htdiv",
-        "body": ["<div>", "\t", "</div>"],
+        "body": ["<div>", "\t$1", "</div>"],
         "description": "A div tag"
+    },
+    "HTML a": {
+        "scope": "html",
+        "prefix": "hta",
+        "body": ["<a href=\"${1:link}\">$0</a>"],
+        "description": "A a tag"
+    },
+    "HTML table": {
+        "scope": "html",
+        "prefix": "httable",
+        "body": ["<table>", "\t<tr>", "\t\t<th>$1<th>", "\t</tr>", "\t<tr>", "\t\t<td>$2</td>", "\t</tr>", "<table>"],
+        "description": "A table tag tree"
     },
 
     "HTML Input": {

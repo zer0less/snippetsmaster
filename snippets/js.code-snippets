@@ -167,5 +167,43 @@
         "prefix": "jslistener",
         "body": ["document.addEventListener('${2:type}', function() {", "\t$0", "})"],
         "description": "A addEventListener statement"
+    },
+
+    "NEXT Setup": {
+        "scope": "javascript",
+        "prefix": "nextup",
+        "body": ["import React from 'react'", "", "export default function ${1:name}() {", "\treturn (", "\t\t<div>", "\t\t\t$0", "\t\t</div>", "\t)", "}"],
+        "description": "A Next.js file setup"
+    },
+    "NEXT Function": {
+        "scope": "javascript",
+        "prefix": "nextfunction",
+        "body": ["function ${1:name}() {", "\treturn (", "\t\t<div>", "\t\t\t$0", "\t\t</div>", "\t)", "}"],
+        "description": "A Next.js function setup"
+    },
+    "NEXT Call": {
+        "scope": "javascript",
+        "prefix": "nextcall",
+        "body": ["<${1:function} >$0<${1}>"],
+        "description": "A function call for Next.js"
+    },
+
+    "REACT Root": {
+        "scope": "javascript",
+        "prefix": "reactroot",
+        "body": ["ReactDOM.render(${1:element}, document.getElementById('root'));"],
+        "description": "A React.js render to the root"
+    },
+    "REACT Function": {
+        "scope": "javascript",
+        "prefix": "reactfunction",
+        "body": ["function ${1:name}() {", "\treturn (", "\t\t<div>", "\t\t\t$0", "\t\t</div>", "\t)", "}"],
+        "description": "A React.js function setup"
+    },
+    "REACT Class": {
+        "scope": "javascript",
+        "prefix": "reactclass",
+        "body": ["class ${1:name} extends React.Component {", "\trender() {", "\t\treturn (", "\t\t\t<>", "\t\t\t\t$0", "\t\t\t</>", "\t\t)", "\t}", "}"],
+        "description": "A React.js class setup"
     }
 }
