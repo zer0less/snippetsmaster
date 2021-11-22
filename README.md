@@ -8,16 +8,30 @@ Snippets are shortcuts for languages.
 - Python
 - HTML
 
-## How to use
+## How to Use
 
 In your editor, type the prefix for the snippets
 
 - Snippets start with `js` for JavaScript
+    - `react` for Reactjs
+    - `next` for Next.js
 - Snippets start with `py` for Python
 - Snippets start with `ht` for HTML
 
 See all the available snippets for a language by typing start prefix.
 
-**Hope it helps you!**
+## Bug/Bad Syntax
 
-By SlashDEV
+Found a bug or a bad syntax? Email slashdev.mail@gmail.com with the snippet name and where the bug/bad syntax is. Thanks for your help!
+
+Want credit? Write your name, username, or gamername in the email. Email addresses will not be sent for credits due to privacy privileges.
+
+## Your Snippet
+
+Want your snippet to be added into the next update? Email slashdev.mail@gmail.com with the complete statement/code you want
+
+> It might be added 2 updates later or more, but we will try to add it ASAP
+
+**Hope Snippets Master helps you!**
+
+By SlashDEV (slashdev.mail@gmail.com)
