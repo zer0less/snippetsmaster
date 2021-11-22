@@ -1,10 +1,11 @@
 # Change Log
 
 ## Lastest
-### 0.0.4
+### 0.1.1 A New Journey
+- Read the overview for more info
 - New Snippets:
     - htinput, httable, hta
-    - nextup, nextfunction, nextcall, nextcall
+    - nextup, nextfunction, nextcall
     - reactfunction, reactclass
     - pyopen
 - Fix: htcomment
@@ -22,7 +23,7 @@
 - New Snippets:
     - jsstatic, jsvar, jslet, jsconst, log, error
 
-### 0.0.1
+### 0.0.1 The Start
 - Start of Snippets Master
 - JavaScript Snippets
 - Python Snippets
