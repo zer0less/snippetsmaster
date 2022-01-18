@@ -1,4 +1,9 @@
 {
+    "JS Long Comment": {
+        "scope": "javascript,typescript",
+        "prefix": "jscomment",
+        "body": ["/*", "$0", "*/"]
+    },
     "JS Var": {
         "scope": "javascript,typescript",
         "prefix": "jsvar",
@@ -79,6 +84,12 @@
         "body": ["do {", "\t$0", "} while (${1:condition})"],
         "description": "A do while loop"
     },
+    "JS Switch": {
+        "scope": "javascript,typescript",
+        "prefix": "jsswitch",
+        "body": ["switch (${1:expression}) {", "\tcase $2:", "\t\t$0", "\t\tbreak;", "\tcase $3:", "\t\t", "\t\tbreak;", "}"],
+        "description": "A switch loop"
+    },
 
     "JS Function": {
         "scope": "javascript,typescript",
@@ -112,7 +123,7 @@
     },
     "JS Class Call": {
         "scope": "javascript,typescript",
-        "prefix": "jscall",
+        "prefix": "jsnew",
         "body": ["const ${1:name} = new ${2:class}(${3})"],
         "description": "A Class Call statement"
     },

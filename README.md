@@ -7,6 +7,7 @@ Snippets are shortcuts for languages.
 - JavaScript
 - Python
 - HTML
+- CSS
 
 ## How to Use
 
@@ -17,6 +18,7 @@ In your editor, type the prefix for the snippets
     - `next` for Next.js
 - Snippets start with `py` for Python
 - Snippets start with `ht` for HTML
+- Snippets start with `css` for CSS
 
 See all the available snippets for a language by typing start prefix.
 
