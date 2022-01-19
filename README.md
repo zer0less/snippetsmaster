@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/slashDEV-account-red">
+
 # Snippets Master
 
 Get snippets for languages to make your coding experience faster! 
