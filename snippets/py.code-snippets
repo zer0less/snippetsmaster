@@ -11,6 +11,13 @@
         "description": "A variable declartion"
     },
 
+    "PY Import": {
+        "scope": "python",
+        "prefix": "pyimport",
+        "body": ["import $1"],
+        "description": ""
+    },
+
 	"PY If": {
         "scope": "python",
         "prefix": "pyif",

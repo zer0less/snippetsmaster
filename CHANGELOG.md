@@ -5,7 +5,7 @@
 - Changed:
     - jscall -> jsnew
 - New:
-    - jsswitch, jscomment
+    - jsswitch, jscomment, jsexport, jsimport
     - CSS Snippets
 
 ## Past Versions
