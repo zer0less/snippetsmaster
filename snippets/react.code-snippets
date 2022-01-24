@@ -18,6 +18,29 @@
         "description": "A function call for Next.js"
     },
 
+    "REACT Init": {
+        "scope": "javascript",
+        "prefix": "reactinit",
+        "body": ["import React from 'react';", "import ReactDOM from 'react-dom';"]
+    },
+    "REACT Import": {
+        "scope": "javascript",
+        "prefix": "reactin",
+        "body": ["import '$1';"],
+        "description": "A React.js import statement"
+    },
+    "REACT Import From": {
+        "scope": "javascript",
+        "prefix": "reactinfrom",
+        "body": ["import $1 from '$2';"],
+        "description": "A React.js import from statement"
+    },
+    "REACT Export": {
+        "scope": "javascript",
+        "prefix": "reactex",
+        "body": ["export default $1;"],
+        "description": "A React.js export statement"
+    },
     "REACT Root": {
         "scope": "javascript",
         "prefix": "reactroot",

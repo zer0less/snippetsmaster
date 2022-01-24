@@ -1,15 +1,16 @@
 # Change Log
 
-## Lastest
+## Current
 ### 0.1.2
 - Changed:
     - jscall -> jsnew
 - New:
     - jsswitch, jscomment, jsexport, jsimport
+    - reactinit, reactin, reactex
     - CSS Snippets
 
-## Past Versions
-### 0.1.1 A New Journey
+## Past
+### 0.1.1
 - Read the overview for more info
 - New:
     - htinput, httable, hta
@@ -29,7 +30,7 @@
 - Icon for Snippets Master
 - New: jsstatic, jsvar, jslet, jsconst, log, error
 
-### 0.0.1 The Start
+### 0.0.1
 - Start of Snippets Master
 - New:
     - JavaScript Snippets
