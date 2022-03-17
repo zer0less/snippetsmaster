@@ -22,5 +22,12 @@
         "prefix": "cssclass",
         "body": [".${1:name} {", "\t$0", "}"],
         "description": "CSS Style with Class"
+    },
+
+    "CSS Page": {
+        "scope": "css",
+        "prefix": "csspage",
+        "body": ["* {margin: 0px;padding:0px;width:100%;height:100%;overflow-x:hidden;}"],
+        "description": "Makes your page nice"
     }
 }

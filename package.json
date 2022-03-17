@@ -6,7 +6,7 @@
     "author": "Slash",
     "publisher": "SlashDEV",
     "license": "MIT",
-    "repository": "https://github.com/isplashy/snippetsmaster",
+    "repository": "https://github.com/zer0less/snippetsmaster",
     "icon": "images/sm.png",
     "engines": {
         "vscode": "^1.56.0"

@@ -2,7 +2,9 @@
 
 ## Current
 ### 0.1.3
-
+- New:
+    - jsasync
+    - pytry, pyinput
 
 ## Past
 ### 0.1.2
