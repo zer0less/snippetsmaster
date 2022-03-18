@@ -1,12 +1,22 @@
 # Change Log
 
 ## Current
+### 1.1.1
+- Changed:
+    - cssimport -> cssin
+- New:
+    - SCSS Snippets
+    - Shell Snippets
+- Fix:
+    - csscomment
+
+## Past
 ### 0.1.3
 - New:
     - jsasync
     - pytry, pyinput
 
-## Past
+
 ### 0.1.2
 - Changed:
     - jscall -> jsnew

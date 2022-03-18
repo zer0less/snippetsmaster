@@ -90,7 +90,7 @@
     "PY Try": {
         "scope": "python",
         "prefix": "pytry",
-        "body": ["try:", "\n$1", "except:", "\n$2"],
+        "body": ["try:", "\t$1", "except:", "\t$2"],
         "description": "A try except condition"
     },
 

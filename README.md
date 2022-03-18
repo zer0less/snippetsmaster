@@ -13,17 +13,21 @@ Snippets are shortcuts for languages.
 - Python
 - HTML
 - CSS
+- SCSS
+- Shell
 
 ## How to Use
 
 In your editor, type the prefix for the snippets
 
-- Snippets start with `js` for JavaScript
+Snippets start with...
+- `js` for JavaScript
     - `react` for Reactjs
     - `next` for Next.js
-- Snippets start with `py` for Python
-- Snippets start with `ht` for HTML
-- Snippets start with `css` for CSS
+- `py` for Python
+- `ht` for HTML
+- `css` for CSS
+- `scss` for SCSS
 
 See all the available snippets for a language by typing start prefix.
 
@@ -37,8 +41,8 @@ Want credit? Write your name, username, or gamername in the email. Email address
 
 Want your snippet to be added into the next update? Email slashdev.mail@gmail.com with the complete statement/code you want
 
-> It might be added 2 updates later or more, but we will try to add it ASAP
+> We will try to add it ASAP
 
 **Hope Snippets Master helps you!**
 
-By SlashDEV (slashdev.mail@gmail.com)
+By SlashDEV/Slash (slashdev.mail@gmail.com)

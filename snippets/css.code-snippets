@@ -2,11 +2,11 @@
     "CSS Comment": {
         "scope": "css",
         "prefix": "csscomment",
-        "body": ["/* $0 /*"]
+        "body": ["/* $0 */"]
     },
     "CSS Import": {
         "scope": "css",
-        "prefix": "cssimport",
+        "prefix": "cssin",
         "body": ["@import url('$0');"],
         "description": "An import statement"
     },
@@ -14,13 +14,13 @@
     "CSS ID": {
         "scope": "css",
         "prefix": "cssid",
-        "body": ["#${1:name} {", "\t$0", "}"],
+        "body": ["#${1:name} {", "\t${2:property}: ${3:value};$0", "}"],
         "description": "CSS Style with ID"
     },
     "CSS Class": {
         "scope": "css",
         "prefix": "cssclass",
-        "body": [".${1:name} {", "\t$0", "}"],
+        "body": [".${1:name} {", "\t${2:property}: ${3:value};$0", "}"],
         "description": "CSS Style with Class"
     },
 

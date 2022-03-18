@@ -1,0 +1,44 @@
+{
+    "SCSS Long Comment": {
+        "scope": "scss",
+        "prefix": "scsscomment",
+        "body": ["/* $0 */"]
+    },
+    "SCSS Variable": {
+        "scope": "scss",
+        "prefix": "scssvar",
+        "body": ["$${1:name}: ${2:value}"],
+        "description": "A variable statment"
+    },
+    "SCSS Global Variable": {
+        "scope": "scss",
+        "prefix": "scssgbl",
+        "body": ["$${1:name}: ${2:value} !global"],
+        "description": "A global variable statment"
+    },
+    "SCSS Nested Property": {
+        "scope": "scss",
+        "prefix": "scssgbl",
+        "body": ["${1:name}: {", "\t${2:property}: ${3:value};$0", "}"],
+        "description": "A nested SCSS property"
+    },
+
+    "SCSS Import": {
+        "scope": "scss",
+        "prefix": "scssin",
+        "body": ["@import \"$0\";"],
+        "description": "An import statement"
+    },
+    "SCSS Mixin": {
+        "scope": "scss",
+        "prefix": "scssmix",
+        "body": ["@mixin ${1:name}(${2:parameter}) {", "\t${3:property}: ${4:value};$0", "}"],
+        "description": "A mixin statement"
+    },
+    "SCSS Include Mixin": {
+        "scope": "scss",
+        "prefix": "scssinc",
+        "body": ["@include ${1:name}();"],
+        "description": "A mixin statement"
+    }
+}
