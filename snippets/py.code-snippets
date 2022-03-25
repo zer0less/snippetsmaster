@@ -1,10 +1,10 @@
 {
     "PY Comment": {
         "scope": "python",
-        "prefix": "pycomment",
-        "body": ["\"\"\"", "$0", "\"\"\""]
+        "prefix": "pycom",
+        "body": ["\"\"\"", "${1:value}", "\"\"\""]
     },
-    "PY Var": {
+    "PY Variable": {
         "scope": "python",
         "prefix": "pyvar",
         "body": ["${1:name} = ${2:value}"],
@@ -13,8 +13,8 @@
 
     "PY Import": {
         "scope": "python",
-        "prefix": "pyimport",
-        "body": ["import $1"],
+        "prefix": "pyin",
+        "body": ["import ${1:folder}"],
         "description": ""
     },
 
@@ -27,7 +27,7 @@
     "PY Elif": {
         "scope": "python",
         "prefix": "pyelif",
-        "body": ["else ${1:expression}:", "\t$0"],
+        "body": ["else if ${1:expression}:", "\t$0"],
         "description": "An else if condition"
     },
     "PY Else": {
@@ -39,20 +39,20 @@
 
     "PY For Of": {
         "scope": "python",
-        "prefix": "pyforof",
+        "prefix": "pyforo",
         "body": ["for ${1:element} in ${2:array}:", "\t$0"],
         "description": "A for of loop"
     }, 
     "PY For In": {
         "scope": "python",
-        "prefix": "pyforin",
+        "prefix": "pyfori",
         "body": ["for ${1:key} in ${2:object}:", "\t$0"],
         "description": "A for in loop"
     },
     "PY For Loop": {
         "scope": "python",
         "prefix": "pyfor",
-        "body": ["for ${1} in range(${2:start}, ${3:end}, ${4:step}):", "\t$0"],
+        "body": ["for ${1:name} in range(${2:start}, ${3:end}, ${4:step}):", "\t$0"],
         "description": "A for loop"
     },
     "PY While": {
@@ -64,7 +64,7 @@
 
     "PY Function": {
         "scope": "python",
-        "prefix": "pyfunction",
+        "prefix": "pydef",
         "body": ["def ${1:name}(${2:parameters}):", "\t$0"],
         "description": "A function"
     },
@@ -103,7 +103,7 @@
     "PY Input": {
         "scope": "python",
         "prefix": "pyinput",
-        "body": ["$1 = input($0)"],
+        "body": ["${1:name} = input($0)"],
         "description": "An input statement"
     }
 }

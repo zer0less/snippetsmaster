@@ -2,13 +2,14 @@
 
 ## Current
 ### 1.1.1
+- Read the overview to see how to use the new snippets
 - Changed:
-    - cssimport -> cssin
+    - _comment -> _com, _import -> _in, _export -> _ex (_ means any language)
 - New:
     - SCSS Snippets
     - Shell Snippets
 - Fix:
-    - csscomment
+    - csscom
 
 ## Past
 ### 0.1.3

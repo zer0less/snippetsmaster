@@ -1,10 +1,10 @@
 {
     "JS Long Comment": {
         "scope": "javascript",
-        "prefix": "jscomment",
-        "body": ["/*", "$0", "*/"]
+        "prefix": "jscom",
+        "body": ["/*", "${1:value}", "*/"]
     },
-    "JS Var": {
+    "JS Variable": {
         "scope": "javascript",
         "prefix": "jsvar",
         "body": ["var ${1:name} = ${2:value}"],
@@ -22,7 +22,6 @@
         "body": ["const ${1:name} = ${2:value}"],
         "description": "A const declaration"
     },
-    
     "JS UseStrict": {
         "scope": "javascript",
         "prefix": "jsuse",
@@ -31,26 +30,26 @@
     },
     "JS Import": {
         "scope": "javascript",
-        "prefix": "jsimp",
-        "body": ["const $1 = require('$2');"],
+        "prefix": "jsin",
+        "body": ["const ${1:name} = require('${2:path}');"],
         "description": "An import statement"
     },
     "JS Export": {
         "scope": "javascript",
-        "prefix": "jsexp",
-        "body": "module.export = $1 ;",
+        "prefix": "jsex",
+        "body": "module.export = ${1:object} ;",
         "description": "An export statement"
     },
     "JS Import Array": {
         "scope": "javascript",
-        "prefix": "jsimport",
-        "body": ["const { $1 } = require('$2');"],
+        "prefix": "jsina",
+        "body": ["const { ${1:names} } = require('${2:path}');"],
         "description": "An array import statement"
     },
     "JS Export Array": {
         "scope": "javascript",
-        "prefix": "jsexport",
-        "body": "module.exports = { $1 };",
+        "prefix": "jsexa",
+        "body": "module.exports = { ${1:objects} };",
         "description": "An array export statement"
     },
 
@@ -74,33 +73,33 @@
     },
     "JS TreeIf": {
         "scope": "javascript",
-        "prefix": "jstreeif",
+        "prefix": "jstif",
         "body": ["if (${1:expression}) {", "\t$2", "} else {", "\t$0", "}"],
-        "description": "An if/else condition"
+        "description": "A tree if/else condition"
     },
     "JS TreeElif": {
         "scope": "javascript",
-        "prefix": "jstreeelif",
+        "prefix": "jstelif",
         "body": ["if (${1:expression}) {", "\t$3", "} else if (${2:expression2}) {", "\t$4", "} else {", "\t$0", "}"],
-        "description": "An if/elif/else condition"
+        "description": "A tree if/elif/else condition"
     },
 
     "JS For Of": {
         "scope": "javascript",
-        "prefix": "jsforof",
+        "prefix": "jsforo",
         "body": ["for (const ${1:element} of ${2:array}) {", "\t$0", "}"],
         "description": "A for of loop"
     }, 
     "JS For In": {
         "scope": "javascript",
-        "prefix": "jsforin",
+        "prefix": "jsfori",
         "body": ["for (const ${1:key} in ${2:object}) {", "\t$0", "}"],
         "description": "A for in loop"
     },
     "JS For Loop": {
         "scope": "javascript",
         "prefix": "jsfor",
-        "body": ["for (const ${1} = ${2:start}; ${1} <= ${3:end}; ${1}++) {", "\t$0", "}"],
+        "body": ["for (const ${1:name} = ${2:start}; ${1} <= ${3:end}; ${1}++) {", "\t$0", "}"],
         "description": "A for loop"
     },
     "JS While": {
@@ -111,7 +110,7 @@
     },
     "JS Do While": {
         "scope": "javascript",
-        "prefix": "jsdowhile",
+        "prefix": "jsdo",
         "body": ["do {", "\t$0", "} while (${1:condition})"],
         "description": "A do while loop"
     },
@@ -124,7 +123,7 @@
 
     "JS Function": {
         "scope": "javascript",
-        "prefix": "jsfunction",
+        "prefix": "jsfun",
         "body": ["function ${1:name}(${2:parameters}) {", "\t$0", "}"],
         "description": "A function"
     },
@@ -142,7 +141,7 @@
     },
     "JS Constructor": {
         "scope": "javascript",
-        "prefix": "jsconstruct",
+        "prefix": "jscon",
         "body": ["constructor(${2:parameters}) {", "\tthis.${2} = ${2};", "}"],
         "description": "A class"
     },
@@ -161,7 +160,7 @@
     "JS Class Call": {
         "scope": "javascript",
         "prefix": "jsnew",
-        "body": ["const ${1:name} = new ${2:class}(${3})"],
+        "body": ["const ${1:name} = new ${2:class}(${3:parameters})"],
         "description": "A Class Call statement"
     },
 
@@ -199,20 +198,20 @@
     },
     "JS QuerySelector": {
         "scope": "javascript",
-        "prefix": "jsselector",
+        "prefix": "jsselect",
         "body": ["const ${1:name} = document.querySelector('${2:element}')"],
         "description": "A querySelector statement"
     },
     "JS CreateElement": {
         "scope": "javascript",
-        "prefix": "jsnewelement",
+        "prefix": "jsnewele",
         "body": ["const ${1:name} = document.createElement('${2:tag}');"],
         "description": "A createElement statement"
     },
     "JS EventListener": {
         "scope": "javascript",
-        "prefix": "jslistener",
-        "body": ["document.addEventListener('${2:type}', function() {", "\t$0", "})"],
+        "prefix": "jslisten",
+        "body": ["document.addEventListener('${1:type}', function() {", "\t$0", "})"],
         "description": "A addEventListener statement"
     },
 }

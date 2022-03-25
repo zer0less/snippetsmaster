@@ -26,8 +26,8 @@ Snippets start with...
     - `next` for Next.js
 - `py` for Python
 - `ht` for HTML
-- `css` for CSS
-- `scss` for SCSS
+- `cs` for CSS
+- `sc` for SCSS
 
 See all the available snippets for a language by typing start prefix.
 

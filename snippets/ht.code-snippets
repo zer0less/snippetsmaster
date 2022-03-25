@@ -1,19 +1,19 @@
 {
     "HTML Comment": {
         "scope": "html",
-        "prefix": "htcomment",
+        "prefix": "htcom",
         "body": ["<!--$1-->"],
         "description": "HTML Comment"
     },
     "HTML Stylesheet": {
         "scope": "html",
-        "prefix": "htstylesheet",
+        "prefix": "htstyle",
         "body": ["<link rel=\"stylesheet\" href=\"${1:path}\" />"],
         "description": "A stylesheet tag"
     },
     "HTML JS Import": {
         "scope": "html",
-        "prefix": "htscriptisrc",
+        "prefix": "htscript",
         "body": ["<script src=\"${1:path}\"></script>"],
         "description": "A script source import tag"
     },
